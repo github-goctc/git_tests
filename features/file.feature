@@ -8,7 +8,7 @@ Feature: File features
     And the login has success
     And I open the repository "GitHub-Test"
     And I switch to branch "master"
-    When I upload the file "/home/test/github/features/file_to_upload.txt"
+    When I upload the file "file_to_upload.txt"
     And I commit the file upload
       | file               | comment           | description       |
       | file_to_upload.txt | New file uploaded | New file uploaded |

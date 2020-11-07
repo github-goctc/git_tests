@@ -7,7 +7,7 @@ module FileHelper
 
     Watir.relaxed_locate = false
     $browser.file_field(id: 'upload-manifest-files-input').wait_until_present
-    $browser.file_field(id: 'upload-manifest-files-input').set (file)
+    $browser.file_field(id: 'upload-manifest-files-input').set (File.join(File.dirname(__FILE__), "../resources/#{file}"))
     Watir.relaxed_locate = true
 
     $browser.div(class: ['js-manifest-file-list-root']).wait_until_present
