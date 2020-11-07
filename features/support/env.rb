@@ -1,0 +1,10 @@
+require 'watir'
+require 'minitest'
+
+require_relative '../../lib/browser.rb'
+require_relative '../../lib/login_logout.rb'
+require_relative '../../lib/file.rb'
+require_relative '../../lib/navigation.rb'
+require_relative '../../lib/commit.rb'
+require_relative '../../lib/issue.rb'
+require_relative '../../lib/project.rb'
