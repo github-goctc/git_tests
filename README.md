@@ -17,7 +17,7 @@ Este pequeno projeto tem por objetivo automatizar um conjunto de testes sobre o 
       * **Cucumber**:
         * version: 3.1.2
 
-   ###### _Para obter mais detalhes sobre o processo de instalação dos pré-requisitos consultar o documento gitgo_setup.txt (na pasta "resources")_
+   ###### _Para obter mais detalhes sobre o processo de instalação dos pré-requisitos consultar o documento gitgo_setup.docx (na pasta "resources")_
 
 
 ## Instalação
