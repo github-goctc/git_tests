@@ -1,6 +1,6 @@
 Feature: File features
 
-  @github @upload_file
+  @github @file
   Scenario: Upload file
     Given I login on GitHub with the following credentials
       | username | password   |
@@ -13,8 +13,10 @@ Feature: File features
       | file               | comment           | description       |
       | file_to_upload.txt | New file uploaded | New file uploaded |
     Then The file "file_to_upload.txt" is available in the repository
+    And I logout from GitHub
+    And the logout has success
 
-  @github @edit_file
+  @github @file
   Scenario: Edit file
     Given I login on GitHub with the following credentials
       | username | password   |
@@ -29,8 +31,10 @@ Feature: File features
       | file               | comment   | description |
       | file_to_upload.txt | Edit file | Edit file   |
     Then The file "file_to_upload.txt" was successfully updated
+    And I logout from GitHub
+    And the logout has success
 
-  @github @delete_file
+  @github @file
   Scenario: Delete file
     Given I login on GitHub with the following credentials
       | username | password   |
@@ -43,3 +47,5 @@ Feature: File features
       | file               | comment     | description |
       | file_to_upload.txt | Delete file | delete file |
     Then The file "file_to_upload.txt" is not available in the repository
+    And I logout from GitHub
+    And the logout has success
